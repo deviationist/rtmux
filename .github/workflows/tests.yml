@@ -1,0 +1,28 @@
+# CI for rtmux. The test suite is self-contained: it stubs ssh and fzf, so no
+# secrets or network are needed; tmux is installed to exercise the remote
+# Python inspector's output-shape check (skipped where tmux is absent).
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # ubuntu-latest has python3 + awk + sh; add zsh (the shell under test)
+      # and tmux (for the inspector shape check).
+      - name: Install zsh and tmux
+        run: sudo apt-get update && sudo apt-get install -y zsh tmux
+
+      - name: Syntax-check
+        run: zsh -n rtmux.zsh && zsh -n tests/rtmux.test.zsh
+
+      - name: Run test suite
+        run: zsh tests/rtmux.test.zsh
