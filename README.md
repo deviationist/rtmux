@@ -34,15 +34,18 @@ about to rejoin, and whether it's still working, at a glance.
 
 ## Install
 
+Clone it anywhere — `rtmux.zsh` self-locates (and its `.env` defaults to right
+next to it), so `~/code` below is just an example:
+
 ```sh
-git clone https://github.com/deviationist/rtmux.git ~/.zsh/rtmux
-echo 'source ~/.zsh/rtmux/rtmux.zsh' >> ~/.zshrc
+git clone https://github.com/deviationist/rtmux.git ~/code/rtmux
+echo 'source ~/code/rtmux/rtmux.zsh' >> ~/.zshrc
 ```
 
 Optionally configure a default host / pool:
 
 ```sh
-cp ~/.zsh/rtmux/.env.example ~/.zsh/rtmux/.env   # then edit
+cp ~/code/rtmux/.env.example ~/code/rtmux/.env   # then edit
 ```
 
 Tab completion registers automatically if `compinit` has run; if you source
