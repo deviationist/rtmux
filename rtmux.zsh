@@ -19,7 +19,8 @@
 #   rtmux                  use $RTMUX_HOSTS / $RTMUX_HOST if set, else usage
 #
 # Multiple remotes: pass more than one host (or set RTMUX_HOSTS="prod dev" in
-# ~/.zsh/.env) and rtmux queries them all, merging their sessions into one
+# rtmux's .env — next to this file, or wherever $RTMUX_ENV_FILE points) and
+# rtmux queries them all, merging their sessions into one
 # picker. Each row is tagged with a coloured host column, and a tab bar across
 # the top lets you Tab / Shift-Tab through per-host views (plus an "All" tab
 # that shows everything). Attach, preview, and ctrl-n all target the host of

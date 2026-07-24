@@ -104,7 +104,7 @@ With **fzf working**, every local dependency rtmux needs (zsh, fzf, ssh) is
 present, so step one is to run **stock `rtmux` as-is**:
 
 ```sh
-source ~/.zsh/rtmux/rtmux.zsh
+source ~/code/rtmux/rtmux.zsh
 rtmux -W user@host             # -W = no live refresh (right default on a phone)
 ```
 
@@ -128,7 +128,7 @@ If it breaks, the likely culprits and the iSH-friendly adjustments:
 ## How to re-run
 
 ```sh
-cd ~/.zsh/rtmux && git pull
+cd ~/code/rtmux && git pull
 ./ish-probe.sh                    # local capabilities
 ./ish-probe.sh user@host          # + SSH reachability
 ```
