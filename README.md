@@ -15,6 +15,10 @@ rtmux dev -n api             # start a named session, no picker
 rtmux                        # use your configured default host / pool
 ```
 
+<div align="center">
+  <img src="assets/demo-d46fd3.svg" alt="rtmux running: the command typed out, a spinner connecting to two remotes, the merged picker listing every tmux session on both hosts with its project, process and Claude Code conversation title, Tab narrowing it to one host, the cursor moving down, and the preview pane opening on the live pane of the highlighted session">
+</div>
+
 A session running Claude Code shows up as, e.g.
 
 ```
@@ -55,7 +59,7 @@ rtmux.zsh before `compinit`, registration is deferred to the first prompt, so
 ## Usage
 
 ```
-usage: rtmux [-d] [-n] [-i SECS] [-W] [host[:dir] …] [name]
+usage: rtmux [-d] [-n] [-a] [-i SECS] [-W] [host[:dir] …] [name]
 
 rtmux <host>          # host = ssh alias or user@host
 rtmux <h1> <h2> …     # several remotes → one merged, tabbed picker
@@ -94,6 +98,21 @@ Claude builds without the per-pid file fall back to the newest transcript.)
 **Row order:** unattached sessions sort to the top — the one you're jumping
 into is usually the one you *haven't* attached yet — then by recent activity.
 
+<div align="center">
+  <img src="assets/picker-d46fd3.svg" alt="the rtmux picker on a single host: three tmux sessions, each row an attached marker, the project directory, the pane process, and for the Claude Code sessions the conversation title, with the claude tag coloured by status">
+</div>
+
+### Pane preview
+
+`→` opens a live `tmux capture-pane` of the highlighted session's active pane,
+so you can confirm it's the one you want before attaching — a build still
+scrolling, an editor you left open, the Claude turn in flight. `←` hides it
+again.
+
+<div align="center">
+  <img src="assets/preview-d46fd3.svg" alt="the rtmux picker with the preview pane open, showing the live content of the highlighted session pane — a vim buffer on the remote host — below the list">
+</div>
+
 ### Directory targets (`host:dir`)
 
 When you already know *where* you want to be, name the place:
@@ -126,6 +145,10 @@ every row gets a coloured **host column**, a **tab bar** (`All` / per-host)
 cycles with `Tab`/`Shift-Tab`, and preview/attach/`ctrl-n` all target the host
 of the row you're on. Unreachable hosts are skipped with a note rather than
 sinking the picker.
+
+<div align="center">
+  <img src="assets/multi-d46fd3.svg" alt="the rtmux picker across two remotes: a tab bar reading All, dev, prod with All selected, above the merged session list, every row tagged with a coloured host column">
+</div>
 
 Host resolution precedence: explicit args → `--all` pool → `RTMUX_HOST`
 (default single) → `RTMUX_HOSTS` pool. So you can keep a fast single-host
@@ -187,6 +210,20 @@ zsh tests/rtmux.test.zsh
 The suite stubs `ssh` and `fzf`, so it needs no network, no remote hosts and
 no real tmux (tmux-dependent checks skip when it's absent). CI runs it on
 every push/PR.
+
+## README images
+
+```sh
+zsh tools/generate-readme-svg.zsh          # → assets/*-<hash>.svg + README refs
+zsh tools/generate-readme-svg.zsh /tmp/out # fixed names elsewhere, README untouched
+```
+
+The images are not drawn — they're rendered from a real run. The generator
+stands up two local tmux servers on private sockets, stubs `ssh` so it
+dispatches to them instead of a network, and runs rtmux unmodified; the rows,
+their colours, the header, the tab bar and the preview pane are its genuine
+output. Needs `tmux`, `python3`, `vim` and a C compiler; no network. Commit the
+SVGs with the README.
 
 ## License
 
