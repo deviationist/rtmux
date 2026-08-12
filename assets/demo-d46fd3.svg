@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="690" height="498" viewBox="0 0 690 498" role="img" aria-label="rtmux running: the command typed out, a spinner connecting to two remotes, the merged picker listing every tmux session on both hosts with its project, process and Claude Code conversation title, Tab narrowing it to one host, the cursor moving down, and the preview pane opening on the live pane of the highlighted session">
+  <style>
+    .fr{opacity:0}
+    #fr1{animation:k1 11540ms step-end infinite}
+    @keyframes k1{0%{opacity:1}0.520%{opacity:0}}
+    #fr2{animation:k2 11540ms step-end infinite}
+    @keyframes k2{0%{opacity:0}0.520%{opacity:1}1.040%{opacity:0}}
+    #fr3{animation:k3 11540ms step-end infinite}
+    @keyframes k3{0%{opacity:0}1.040%{opacity:1}1.560%{opacity:0}}
+    #fr4{animation:k4 11540ms step-end infinite}
+    @keyframes k4{0%{opacity:0}1.560%{opacity:1}2.080%{opacity:0}}
+    #fr5{animation:k5 11540ms step-end infinite}
+    @keyframes k5{0%{opacity:0}2.080%{opacity:1}2.600%{opacity:0}}
+    #fr6{animation:k6 11540ms step-end infinite}
+    @keyframes k6{0%{opacity:0}2.600%{opacity:1}3.120%{opacity:0}}
+    #fr7{animation:k7 11540ms step-end infinite}
+    @keyframes k7{0%{opacity:0}3.120%{opacity:1}3.640%{opacity:0}}
+    #fr8{animation:k8 11540ms step-end infinite}
+    @keyframes k8{0%{opacity:0}3.640%{opacity:1}4.159%{opacity:0}}
+    #fr9{animation:k9 11540ms step-end infinite}
+    @keyframes k9{0%{opacity:0}4.159%{opacity:1}4.679%{opacity:0}}
+    #fr10{animation:k10 11540ms step-end infinite}
+    @keyframes k10{0%{opacity:0}4.679%{opacity:1}5.199%{opacity:0}}
+    #fr11{animation:k11 11540ms step-end infinite}
+    @keyframes k11{0%{opacity:0}5.199%{opacity:1}5.719%{opacity:0}}
+    #fr12{animation:k12 11540ms step-end infinite}
+    @keyframes k12{0%{opacity:0}5.719%{opacity:1}6.239%{opacity:0}}
+    #fr13{animation:k13 11540ms step-end infinite}
+    @keyframes k13{0%{opacity:0}6.239%{opacity:1}6.759%{opacity:0}}
+    #fr14{animation:k14 11540ms step-end infinite}
+    @keyframes k14{0%{opacity:0}6.759%{opacity:1}7.279%{opacity:0}}
+    #fr15{animation:k15 11540ms step-end infinite}
+    @keyframes k15{0%{opacity:0}7.279%{opacity:1}11.612%{opacity:0}}
+    #fr16{animation:k16 11540ms step-end infinite}
+    @keyframes k16{0%{opacity:0}11.612%{opacity:1}19.411%{opacity:0}}
+    #fr17{animation:k17 11540ms step-end infinite}
+    @keyframes k17{0%{opacity:0}19.411%{opacity:1}35.875%{opacity:0}}
+    #fr18{animation:k18 11540ms step-end infinite}
+    @keyframes k18{0%{opacity:0}35.875%{opacity:1}50.607%{opacity:0}}
+    #fr19{animation:k19 11540ms step-end infinite}
+    @keyframes k19{0%{opacity:0}50.607%{opacity:1}60.139%{opacity:0}}
+    #fr20{animation:k20 11540ms step-end infinite}
+    @keyframes k20{0%{opacity:0}60.139%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){.fr{animation:none!important;opacity:0}#fr20{opacity:1}}
+  </style>
+  <rect width="690" height="498" rx="10" fill="#1e1e2e"/>
+  <rect width="690" height="30" rx="10" fill="#181825"/>
+  <rect y="24" width="690" height="6" fill="#181825"/>
+  <circle cx="18" cy="15" r="5.5" fill="#f38ba8"/><circle cx="36" cy="15" r="5.5" fill="#f9e2af"/><circle cx="54" cy="15" r="5.5" fill="#a6e3a1"/>
+  <text x="345" y="20" text-anchor="middle" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="12" fill="#9399b2">rtmux</text>
+  <g id="fr1" class="fr" opacity="0">
+  <rect x="35.70" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85">% </tspan></text>
+  </g>
+  <g id="fr2" class="fr" opacity="0">
+  <rect x="43.55" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70">% r</tspan></text>
+  </g>
+  <g id="fr3" class="fr" opacity="0">
+  <rect x="51.40" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55">% rt</tspan></text>
+  </g>
+  <g id="fr4" class="fr" opacity="0">
+  <rect x="59.25" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40">% rtm</tspan></text>
+  </g>
+  <g id="fr5" class="fr" opacity="0">
+  <rect x="67.10" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25">% rtmu</tspan></text>
+  </g>
+  <g id="fr6" class="fr" opacity="0">
+  <rect x="74.95" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10">% rtmux</tspan></text>
+  </g>
+  <g id="fr7" class="fr" opacity="0">
+  <rect x="82.80" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95">% rtmux </tspan></text>
+  </g>
+  <g id="fr8" class="fr" opacity="0">
+  <rect x="90.65" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80">% rtmux d</tspan></text>
+  </g>
+  <g id="fr9" class="fr" opacity="0">
+  <rect x="98.50" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65">% rtmux de</tspan></text>
+  </g>
+  <g id="fr10" class="fr" opacity="0">
+  <rect x="106.35" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50">% rtmux dev</tspan></text>
+  </g>
+  <g id="fr11" class="fr" opacity="0">
+  <rect x="114.20" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35">% rtmux dev </tspan></text>
+  </g>
+  <g id="fr12" class="fr" opacity="0">
+  <rect x="122.05" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20">% rtmux dev p</tspan></text>
+  </g>
+  <g id="fr13" class="fr" opacity="0">
+  <rect x="129.90" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05">% rtmux dev pr</tspan></text>
+  </g>
+  <g id="fr14" class="fr" opacity="0">
+  <rect x="137.75" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90">% rtmux dev pro</tspan></text>
+  </g>
+  <g id="fr15" class="fr" opacity="0">
+  <rect x="145.60" y="45" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75">% rtmux dev prod</tspan></text>
+  </g>
+  <g id="fr16" class="fr" opacity="0">
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75">% rtmux dev prod</tspan></text>
+  <text y="97" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#9399b2"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10">⠹ connecting to dev &amp; prod…</tspan></text>
+  <rect x="632" y="40" width="38" height="26" rx="6" fill="#313244" stroke="#45475a"/>
+  <text x="651" y="58" text-anchor="middle" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="14" fill="#cdd6f4">⏎</text>
+  </g>
+  <g id="fr17" class="fr" opacity="0">
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75">% rtmux dev prod</tspan></text>
+  <rect x="35.70" y="85" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="97" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#89dceb"><tspan x="20.00 27.85">&gt; </tspan></text>
+  <rect x="67" y="112" width="603" height="1" fill="#45475a"/>
+  <text y="117" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#f9e2af"><tspan x="35.70 43.55 51.40">5/5</tspan></text>
+<rect x="35.70" y="121" width="39.75" height="20" fill="#cdd6f4"/>
+  <text y="137" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25 67.10" fill="#1e1e2e"> All </tspan><tspan x="74.95 82.80">  </tspan><tspan x="90.65 98.50 106.35" fill="#94e2d5">dev</tspan><tspan x="114.20 122.05">  </tspan><tspan x="129.90 137.75 145.60 153.45" fill="#f5c2e7">prod</tspan></text>
+  <text y="157" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90 608.75 616.60 624.45 632.30">Enter attach · Tab/S-Tab host · ctrl-n new · ctrl-r refresh · → preview · Esc</tspan></text>
+  <rect x="0" y="161" width="690" height="20" fill="#313244"/>
+  <rect x="20.00" y="161" width="3" height="20" fill="#f38ba8"/>
+  <text y="177" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> rtmux      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#94e2d5">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90">Gate every fzf feature behind a version check</tspan></text>
+  <rect x="20.00" y="181" width="3" height="20" fill="#313244"/>
+  <text y="197" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> nginx      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40" fill="#9399b2">vim</tspan></text>
+  <rect x="20.00" y="201" width="3" height="20" fill="#313244"/>
+  <text y="217" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#a6e3a1">●</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> api-gateway</tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#f9e2af">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35">Fix the pagination race in the sync worker</tspan></text>
+  <rect x="20.00" y="221" width="3" height="20" fill="#313244"/>
+  <text y="237" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#f5c2e7">prod</tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90"> ingest</tspan><tspan x="137.75 145.60">  </tspan><tspan x="153.45 161.30 169.15 177.00 184.85 192.70" fill="#94e2d5">claude</tspan><tspan x="200.55 208.40">  </tspan><tspan x="216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35">Backfill the dedupe index after the schema bump</tspan></text>
+  <rect x="20.00" y="241" width="3" height="20" fill="#313244"/>
+  <text y="257" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#f5c2e7">prod</tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90"> srv   </tspan><tspan x="137.75 145.60">  </tspan><tspan x="153.45 161.30 169.15" fill="#9399b2">zsh</tspan></text>
+  </g>
+  <g id="fr18" class="fr" opacity="0">
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75">% rtmux dev prod</tspan></text>
+  <rect x="35.70" y="85" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="97" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#89dceb"><tspan x="20.00 27.85">&gt; </tspan></text>
+  <rect x="67" y="112" width="603" height="1" fill="#45475a"/>
+  <text y="117" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#f9e2af"><tspan x="35.70 43.55 51.40">3/3</tspan></text>
+<rect x="74.95" y="121" width="39.75" height="20" fill="#cdd6f4"/>
+  <text y="137" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40" fill="#9399b2">All</tspan><tspan x="59.25 67.10">  </tspan><tspan x="74.95 82.80 90.65 98.50 106.35" fill="#1e1e2e"> dev </tspan><tspan x="114.20 122.05">  </tspan><tspan x="129.90 137.75 145.60 153.45" fill="#f5c2e7">prod</tspan></text>
+  <text y="157" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90 608.75 616.60 624.45 632.30">Enter attach · Tab/S-Tab host · ctrl-n new · ctrl-r refresh · → preview · Esc</tspan></text>
+  <rect x="0" y="161" width="690" height="20" fill="#313244"/>
+  <rect x="20.00" y="161" width="3" height="20" fill="#f38ba8"/>
+  <text y="177" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> rtmux      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#94e2d5">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90">Gate every fzf feature behind a version check</tspan></text>
+  <rect x="20.00" y="181" width="3" height="20" fill="#313244"/>
+  <text y="197" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> nginx      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40" fill="#9399b2">vim</tspan></text>
+  <rect x="20.00" y="201" width="3" height="20" fill="#313244"/>
+  <text y="217" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#a6e3a1">●</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> api-gateway</tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#f9e2af">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35">Fix the pagination race in the sync worker</tspan></text>
+  <rect x="632" y="40" width="38" height="26" rx="6" fill="#313244" stroke="#45475a"/>
+  <text x="651" y="58" text-anchor="middle" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="14" fill="#cdd6f4">⇥</text>
+  </g>
+  <g id="fr19" class="fr" opacity="0">
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75">% rtmux dev prod</tspan></text>
+  <rect x="35.70" y="85" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="97" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#89dceb"><tspan x="20.00 27.85">&gt; </tspan></text>
+  <rect x="67" y="112" width="603" height="1" fill="#45475a"/>
+  <text y="117" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#f9e2af"><tspan x="35.70 43.55 51.40">3/3</tspan></text>
+<rect x="74.95" y="121" width="39.75" height="20" fill="#cdd6f4"/>
+  <text y="137" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40" fill="#9399b2">All</tspan><tspan x="59.25 67.10">  </tspan><tspan x="74.95 82.80 90.65 98.50 106.35" fill="#1e1e2e"> dev </tspan><tspan x="114.20 122.05">  </tspan><tspan x="129.90 137.75 145.60 153.45" fill="#f5c2e7">prod</tspan></text>
+  <text y="157" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90 608.75 616.60 624.45 632.30">Enter attach · Tab/S-Tab host · ctrl-n new · ctrl-r refresh · → preview · Esc</tspan></text>
+  <rect x="20.00" y="161" width="3" height="20" fill="#313244"/>
+  <text y="177" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> rtmux      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#94e2d5">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90">Gate every fzf feature behind a version check</tspan></text>
+  <rect x="0" y="181" width="690" height="20" fill="#313244"/>
+  <rect x="20.00" y="181" width="3" height="20" fill="#f38ba8"/>
+  <text y="197" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> nginx      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40" fill="#9399b2">vim</tspan></text>
+  <rect x="20.00" y="201" width="3" height="20" fill="#313244"/>
+  <text y="217" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#a6e3a1">●</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> api-gateway</tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#f9e2af">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35">Fix the pagination race in the sync worker</tspan></text>
+  <rect x="632" y="40" width="38" height="26" rx="6" fill="#313244" stroke="#45475a"/>
+  <text x="651" y="58" text-anchor="middle" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="14" fill="#cdd6f4">↓</text>
+  </g>
+  <g id="fr20" class="fr">
+  <text y="57" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75">% rtmux dev prod</tspan></text>
+  <rect x="35.70" y="85" width="8" height="16" fill="#cdd6f4" opacity="0.75"/>
+  <text y="97" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#89dceb"><tspan x="20.00 27.85">&gt; </tspan></text>
+  <rect x="67" y="112" width="603" height="1" fill="#45475a"/>
+  <text y="117" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#f9e2af"><tspan x="35.70 43.55 51.40">3/3</tspan></text>
+<rect x="74.95" y="121" width="39.75" height="20" fill="#cdd6f4"/>
+  <text y="137" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40" fill="#9399b2">All</tspan><tspan x="59.25 67.10">  </tspan><tspan x="74.95 82.80 90.65 98.50 106.35" fill="#1e1e2e"> dev </tspan><tspan x="114.20 122.05">  </tspan><tspan x="129.90 137.75 145.60 153.45" fill="#f5c2e7">prod</tspan></text>
+  <text y="157" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90 608.75 616.60 624.45 632.30">Enter attach · Tab/S-Tab host · ctrl-n new · ctrl-r refresh · → preview · Esc</tspan></text>
+  <rect x="20.00" y="161" width="3" height="20" fill="#313244"/>
+  <text y="177" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> rtmux      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#94e2d5">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35 585.20 593.05 600.90">Gate every fzf feature behind a version check</tspan></text>
+  <rect x="0" y="181" width="690" height="20" fill="#313244"/>
+  <rect x="20.00" y="181" width="3" height="20" fill="#f38ba8"/>
+  <text y="197" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#9399b2">○</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> nginx      </tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40" fill="#9399b2">vim</tspan></text>
+  <rect x="20.00" y="201" width="3" height="20" fill="#313244"/>
+  <text y="217" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="35.70 43.55 51.40 59.25" fill="#94e2d5">dev </tspan><tspan x="67.10"> </tspan><tspan x="74.95" fill="#a6e3a1">●</tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15"> api-gateway</tspan><tspan x="177.00 184.85">  </tspan><tspan x="192.70 200.55 208.40 216.25 224.10 231.95" fill="#f9e2af">claude</tspan><tspan x="239.80 247.65">  </tspan><tspan x="255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05 443.90 451.75 459.60 467.45 475.30 483.15 491.00 498.85 506.70 514.55 522.40 530.25 538.10 545.95 553.80 561.65 569.50 577.35">Fix the pagination race in the sync worker</tspan></text>
+  <rect x="12" y="238" width="636" height="252" rx="6" fill="none" stroke="#45475a" stroke-width="1"/>
+  <text y="257" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25" fill="#f9e2af">server</tspan><tspan x="67.10 74.95"> {</tspan></text>
+  <text y="277" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55">    </tspan><tspan x="51.40 59.25 67.10 74.95 82.80 90.65">listen</tspan><tspan x="98.50"> </tspan><tspan x="106.35 114.20 122.05" fill="#f5c2e7">443</tspan><tspan x="129.90"> </tspan><tspan x="137.75 145.60 153.45">ssl</tspan><tspan x="161.30"> </tspan><tspan x="169.15 177.00 184.85 192.70 200.55">http2</tspan><tspan x="208.40">;</tspan></text>
+  <text y="297" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55">    </tspan><tspan x="51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90">server_name</tspan><tspan x="137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10 231.95 239.80"> ot.ichiva.no;</tspan></text>
+  <text y="317" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"></text>
+  <text y="337" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55">    </tspan><tspan x="51.40 59.25 67.10 74.95 82.80 90.65 98.50">include</tspan><tspan x="106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25"> snippets/only-</tspan><tspan x="224.10 231.95 239.80 247.65 255.50" fill="#94e2d5">allow</tspan><tspan x="263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80 404.65 412.50 420.35 428.20 436.05">-homelab-networks.conf;</tspan></text>
+  <text y="357" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"></text>
+  <text y="377" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55">    </tspan><tspan x="51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35" fill="#f9e2af">location</tspan><tspan x="114.20 122.05 129.90 137.75"> / {</tspan></text>
+  <text y="397" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95">        </tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45">proxy_pass</tspan><tspan x="161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75 302.60 310.45 318.30 326.15">       http://quim-wg:</tspan><tspan x="334.00 341.85 349.70 357.55" fill="#f5c2e7">7000</tspan><tspan x="365.40">;</tspan></text>
+  <text y="417" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95">        </tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55" fill="#94e2d5">proxy_set_header</tspan><tspan x="208.40 216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75"> Host       </tspan><tspan x="302.60 310.45 318.30 326.15 334.00" fill="#94e2d5">$host</tspan><tspan x="341.85">;</tspan></text>
+  <text y="437" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95">        </tspan><tspan x="82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55" fill="#94e2d5">proxy_set_header</tspan><tspan x="208.40 216.25 224.10 231.95 239.80 247.65 255.50 263.35 271.20 279.05 286.90 294.75"> Upgrade    </tspan><tspan x="302.60 310.45 318.30 326.15 334.00 341.85 349.70 357.55 365.40 373.25 381.10 388.95 396.80" fill="#94e2d5">$http_upgrade</tspan><tspan x="404.65">;</tspan></text>
+  <text y="457" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40">    }</tspan></text>
+  <text y="477" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="13" xml:space="preserve" fill="#cdd6f4"><tspan x="20.00 27.85 35.70 43.55 51.40 59.25 67.10 74.95 82.80 90.65 98.50 106.35 114.20 122.05 129.90 137.75 145.60 153.45 161.30 169.15 177.00 184.85 192.70 200.55 208.40 216.25 224.10 231.95 239.80">"ot.conf" 12 lines, 287 bytes</tspan></text>
+  <rect x="632" y="40" width="38" height="26" rx="6" fill="#313244" stroke="#45475a"/>
+  <text x="651" y="58" text-anchor="middle" font-family="'Cascadia Code','Fira Code',SFMono-Regular,Consolas,Menlo,monospace" font-size="14" fill="#cdd6f4">→</text>
+  </g>
+</svg>
