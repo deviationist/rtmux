@@ -854,7 +854,7 @@ rtmux() {
       -W|--no-watch) watch=0 ;;
       -h|--help)
         cat <<'EOF'
-usage: rtmux [-d] [-n] [-i SECS] [-W] [host[:dir] …] [name]
+usage: rtmux [-d] [-n] [-a] [-i SECS] [-W] [host[:dir] …] [name]
 
   Pick a remote tmux session in fzf and ssh-attach to it. Rows show the
   attached marker (●/○), the project (the pane's cwd basename), the main
