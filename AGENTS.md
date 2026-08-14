@@ -110,3 +110,10 @@ on builds as old as **0.27** (what iSH/Alpine ships — see `ish-compat.md`):
   idle stub and copies it to `claude`/`zsh`); `-t 0` is an ambiguous tmux target
   (use `=0:`); and the run needs a pty or the connect spinner returns early and
   the listing comes back empty.
+- **Never hand-write a command the tool itself builds.** The preview pane is
+  produced by extracting the `--preview=` string rtmux handed fzf and filling
+  fzf's `{2}`/`{3}`/`{4}` from the highlighted row, then running *that* — so a
+  broken preview path fails the build instead of quietly rendering a plausible
+  picture. (fzf expands `{n}` against the **original** line, not the
+  `--with-nth=1` display field — verified against fzf 0.74 — which is what makes
+  `{2}`=session / `{3}`=slug / `{4}`=host work at all.)

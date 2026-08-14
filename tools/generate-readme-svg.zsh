@@ -318,9 +318,25 @@ run_rtmux() {   # <capture-file> <argv-file> <rtmux args...>
 run_rtmux "$tmp/single" "$tmp/single.argv" dev
 RSVG_TABS=2 run_rtmux "$tmp/multi" "$tmp/multi.argv" dev prod
 
-# The preview, through the same stub ssh rtmux's --preview would call: a real
-# `tmux capture-pane -ep` of the vim session.
-preview_out=$(ssh -o ControlPath=/dev/null dev tmux capture-pane -ep -t nginx 2>/dev/null)
+# The preview. Not a hand-written capture-pane that resembles what rtmux would
+# run — literally the --preview command rtmux handed fzf, with fzf's field
+# placeholders filled from the row the demo highlights. That is the whole point:
+# if rtmux's preview wiring were wrong, this would come back empty rather than
+# quietly produce a plausible picture. (fzf expands {n} against the *original*
+# line, not the --with-nth=1 display field, so {2}/{3}/{4} are the session, the
+# slug and the host — verified against fzf 0.74.)
+preview_cmd_for() {   # <argv-array> <raw-row>
+  local -a av=("${(@P)1}")
+  local -a f=("${(@ps:\t:)2}")
+  local cmd="" a
+  for a in "${av[@]}"; do [[ $a == --preview=* ]] && cmd=${a#--preview=}; done
+  [[ -n $cmd ]] || return 1
+  cmd=${cmd//\{1\}/${f[1]}}
+  cmd=${cmd//\{2\}/${f[2]}}
+  cmd=${cmd//\{3\}/${f[3]}}
+  cmd=${cmd//\{4\}/${f[4]}}
+  print -r -- "$cmd"
+}
 
 typeset -a srows margs mrows drows drows_raw
 srows=("${(@f)$(<"$tmp/single")}");  srows=(${srows:#})
@@ -358,9 +374,9 @@ sheader=$(argv_header sargs)
 mheader=$(argv_header margs)
 dheader=$(<"$tmp/multi.hdr1")
 
-[[ ${#srows} -ge 3 && ${#mrows} -ge 5 && ${#drows} -ge 3 && -n $sheader && -n $mheader && -n $dheader && -n $preview_out ]] || {
+[[ ${#srows} -ge 3 && ${#mrows} -ge 5 && ${#drows} -ge 3 && -n $sheader && -n $mheader && -n $dheader ]] || {
   print -u2 "generate-readme-svg: sandbox produced no output — aborting"
-  print -u2 "  single=${#srows} multi=${#mrows} devtab=${#drows} preview=${#preview_out}"
+  print -u2 "  single=${#srows} multi=${#mrows} devtab=${#drows}"
   exit 1
 }
 print -u2 "captured ${#srows} single-host rows, ${#mrows} merged rows, ${#drows} on the dev tab"
@@ -372,6 +388,15 @@ for (( ri = 1; ri <= ${#drows_raw}; ri++ )); do
   [[ ${drows_raw[ri]} == *$'\t'nginx$'\t'* ]] && VIMROW=$ri
 done
 (( VIMROW )) || { print -u2 "generate-readme-svg: no nginx row on the dev tab"; exit 1 }
+
+local pvcmd; pvcmd=$(preview_cmd_for margs "${drows_raw[VIMROW]}") || {
+  print -u2 "generate-readme-svg: rtmux passed fzf no --preview"; exit 1 }
+print -u2 "preview command (rtmux's own): $pvcmd"
+preview_out=$(sh -c "$pvcmd" 2>/dev/null)
+[[ -n $preview_out ]] || {
+  print -u2 "generate-readme-svg: rtmux's own --preview command returned nothing"
+  exit 1
+}
 
 # ---------------------------------------------------------------------------
 # SVG
