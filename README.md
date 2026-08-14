@@ -16,7 +16,7 @@ rtmux                        # use your configured default host / pool
 ```
 
 <div align="center">
-  <img src="assets/demo-d46fd3.svg" alt="rtmux running: the command typed out, a spinner connecting to two remotes, the merged picker listing every tmux session on both hosts with its project, process and Claude Code conversation title, Tab narrowing it to one host, the cursor moving down, and the preview pane opening on the live pane of the highlighted session">
+  <img src="assets/demo-618b74.svg" alt="rtmux running: the command typed out, a spinner connecting to two remotes, the merged picker listing every tmux session on both hosts with its project, process and Claude Code conversation title, Tab narrowing it to one host, the cursor moving down, and the preview pane opening on the live pane of the highlighted session">
 </div>
 
 A session running Claude Code shows up as, e.g.
@@ -99,7 +99,7 @@ Claude builds without the per-pid file fall back to the newest transcript.)
 into is usually the one you *haven't* attached yet — then by recent activity.
 
 <div align="center">
-  <img src="assets/picker-d46fd3.svg" alt="the rtmux picker on a single host: three tmux sessions, each row an attached marker, the project directory, the pane process, and for the Claude Code sessions the conversation title, with the claude tag coloured by status">
+  <img src="assets/picker-618b74.svg" alt="the rtmux picker on a single host: three tmux sessions, each row an attached marker, the project directory, the pane process, and for the Claude Code sessions the conversation title, with the claude tag coloured by status">
 </div>
 
 ### Pane preview
@@ -110,7 +110,7 @@ scrolling, an editor you left open, the Claude turn in flight. `←` hides it
 again.
 
 <div align="center">
-  <img src="assets/preview-d46fd3.svg" alt="the rtmux picker with the preview pane open, showing the live content of the highlighted session pane — a vim buffer on the remote host — below the list">
+  <img src="assets/preview-618b74.svg" alt="the rtmux picker with the preview pane open, showing the live content of the highlighted session pane — a vim buffer on the remote host — below the list">
 </div>
 
 ### Directory targets (`host:dir`)
@@ -147,7 +147,7 @@ of the row you're on. Unreachable hosts are skipped with a note rather than
 sinking the picker.
 
 <div align="center">
-  <img src="assets/multi-d46fd3.svg" alt="the rtmux picker across two remotes: a tab bar reading All, dev, prod with All selected, above the merged session list, every row tagged with a coloured host column">
+  <img src="assets/multi-618b74.svg" alt="the rtmux picker across two remotes: a tab bar reading All, dev, prod with All selected, above the merged session list, every row tagged with a coloured host column">
 </div>
 
 Host resolution precedence: explicit args → `--all` pool → `RTMUX_HOST`
