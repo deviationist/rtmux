@@ -117,3 +117,9 @@ on builds as old as **0.27** (what iSH/Alpine ships — see `ish-compat.md`):
   picture. (fzf expands `{n}` against the **original** line, not the
   `--with-nth=1` display field — verified against fzf 0.74 — which is what makes
   `{2}`=session / `{3}`=slug / `{4}`=host work at all.)
+- Same rule for **layout**: the preview pane's size comes from fzf's own
+  arithmetic, measured with a `$FZF_PREVIEW_LINES`/`$FZF_PREVIEW_COLUMNS` probe
+  rather than assumed — the window's share is **truncated**, not rounded
+  (30 rows → 16, never 17), the border costs 2 of those rows, and the columns
+  lose a constant 4 at every width. The list keeps its full allocation, so the
+  blank space under three rows is fzf's, not padding.

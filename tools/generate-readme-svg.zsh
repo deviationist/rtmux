@@ -85,8 +85,30 @@ trap cleanup EXIT INT TERM
 # inner width so its screen fills the box exactly, the way it would on a real
 # remote whose pane you sized to your window.
 integer COLS=112
-integer PVCOLS=$(( COLS - 2 ))
-integer PVROWS=12
+
+# fzf's own geometry, derived from the flags rtmux passes rather than from how
+# many lines the previewed pane happened to draw — sizing the box to the capture
+# puts the split wherever vim's file length landed, which is a picture of
+# nothing. rtmux asks for --height=90% and --preview-window=down,55%.
+#
+# The arithmetic is fzf's, measured rather than assumed: a preview command that
+# prints $FZF_PREVIEW_LINES / $FZF_PREVIEW_COLUMNS, run under a pty at four
+# sizes, gives
+#
+#   term 30x112 -> lines=14 cols=108     term 40x112 -> lines=20 cols=108
+#   term 30x80  -> lines=14 cols=76      term 50x160 -> lines=25 cols=156
+#
+# i.e. the window's share is *truncated*, not rounded (30 -> 16, never 17); the
+# border costs 2 of those rows; and the columns lose a constant 4 at every
+# width. (The same probe cannot be run with --height: fzf's inline mode waits on
+# a cursor-position reply a bare pty never sends. The rule above is measured
+# full-screen and applied to the 90% window.)
+integer TROWS=30                              # the terminal these are shot in
+integer FZFROWS=$(( TROWS * 90 / 100 ))       # --height=90%
+integer PVALLOC=$(( FZFROWS * 55 / 100 ))     # --preview-window=…,55%, truncated
+integer PVROWS=$(( PVALLOC - 2 ))             # inner lines: border top + bottom
+integer PVCOLS=$(( COLS - 4 ))                # inner columns: measured constant
+integer LISTROWS=$(( FZFROWS - PVALLOC ))     # what the list is left with
 
 bin="$tmp/bin"; stub="$tmp/stub"
 mkdir -p "$bin" "$stub"
@@ -576,10 +598,13 @@ svg_close() { print -r -- "</svg>" }
 canvas_w() { print -rn -- $(( PX * 2 + $1 * cw + 6 + SLACK )) }
 canvas_h() { print -rn -- $(( TH + PY + $1 * LH + PY )) }
 
-# preview_box <y0> <cols> <lines> — fzf's preview border (rounded, its default)
-# around the full-width pane rtmux opens with --preview-window=down.
+# preview_box <border-top-line> <cols> — fzf's preview border (rounded, its
+# default) around the full-width pane rtmux opens with --preview-window=down.
+# The border is not decoration drawn tight around the text: it costs fzf a row
+# at the top and a row at the bottom, which is why the box spans the whole
+# PVALLOC and the content sits one row inside it.
 preview_box() {
-  integer x=$(( PX - 8 )) y=$(( $1 - 6 )) w=$(( $2 * cw + 16 )) h=$(( $3 * LH + 12 ))
+  integer x=$(( PX - 8 )) y=$(( TH + PY + $1 * LH )) w=$(( $2 * cw + 16 )) h=$(( PVALLOC * LH ))
   print -r -- "  <rect x=\"$x\" y=\"$y\" width=\"$w\" height=\"$h\" rx=\"6\" fill=\"none\" stroke=\"$RULE\" stroke-width=\"1\"/>"
 }
 
@@ -618,7 +643,8 @@ multi_lines=("t|$CMD_MULTI" 'b|' "${multi_lines[@]}")
 pv_lines=()
 local ln
 for ln in "${(@f)preview_out}"; do pv_lines+=("a|$(clip_ansi "$ln" $PVCOLS)"); done
-while [[ ${pv_lines[-1]} == 'a|' ]]; do pv_lines[-1]=(); done
+# fzf clips the pane to its window; it does not grow the window to fit.
+(( ${#pv_lines} > PVROWS )) && pv_lines=("${(@)pv_lines[1,PVROWS]}")
 
 fzf_frame pvlist_lines drows "$dheader" $VIMROW
 pvlist_lines=("t|$CMD_MULTI" 'b|' "${pvlist_lines[@]}")
@@ -638,7 +664,11 @@ out_svg() {
   if [[ -n $pvarr ]]; then
     _pv=("${(@P)pvarr}")
     for e in "${_pv[@]}"; do n=$(vlen "${e#*|}"); (( n > cols )) && cols=$n; done
-    (( nlines += 1 + ${#_pv} ))
+    # The whole window, not the content: 2 shell lines + fzf's 90%-height frame.
+    # The list keeps its full allocation even with three rows in it — the blank
+    # space under them is exactly what fzf leaves there, and it is what puts the
+    # preview at 55% instead of wherever the rows ran out.
+    nlines=$(( 2 + FZFROWS ))
   fi
   (( cols < MINCOLS )) && cols=$MINCOLS
   integer W=$(canvas_w $cols) H=$(canvas_h $nlines)
@@ -647,9 +677,8 @@ out_svg() {
     chrome $W $H 'rtmux'
     emit_lines $arr $(( TH + PY )) 0 $W
     if [[ -n $pvarr ]]; then
-      integer pvy=$(( TH + PY + (${#_l} + 1) * LH ))
-      preview_box $pvy $cols ${#_pv}
-      emit_lines $pvarr $pvy 0 $W
+      preview_box $(( 2 + LISTROWS )) $cols
+      emit_lines $pvarr $(( TH + PY + (2 + LISTROWS + 1) * LH )) 0 $W
     fi
     svg_close
   } > "$file"
@@ -731,9 +760,8 @@ anim_svg() {
   for (( i = 1; i <= ${#FR}; i++ )); do
     pv=${FR_PV[i]}; [[ -n $pv ]] || continue
     local -a _p=("${(@P)pv}")
-    local -a _f=("${(@P)${FR[i]}}")
     for e in "${_p[@]}"; do n=$(vlen "${e#*|}"); (( n > cols )) && cols=$n; done
-    (( ${#_f} + 1 + ${#_p} > nlines )) && nlines=$(( ${#_f} + 1 + ${#_p} ))
+    (( 2 + FZFROWS > nlines )) && nlines=$(( 2 + FZFROWS ))
   done
   integer W=$(canvas_w $cols) H=$(canvas_h $nlines)
 
@@ -783,10 +811,8 @@ anim_svg() {
       emit_lines ${FR[j]} $(( TH + PY )) 0 $W
       pv=${FR_PV[j]}
       if [[ -n $pv ]]; then
-        local -a _p=("${(@P)pv}") _f=("${(@P)${FR[j]}}")
-        integer pvy=$(( TH + PY + (${#_f} + 1) * LH ))
-        preview_box $pvy $cols ${#_p}
-        emit_lines $pv $pvy 0 $W
+        preview_box $(( 2 + LISTROWS )) $cols
+        emit_lines $pv $(( TH + PY + (2 + LISTROWS + 1) * LH )) 0 $W
       fi
       [[ -n ${FR_KEY[j]} ]] && keycap $W "${FR_KEY[j]}"
       print -r -- "  </g>"
